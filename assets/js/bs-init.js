@@ -19,14 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bss-tooltip]'));
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-	  return new bootstrap.Tooltip(tooltipTriggerEl, {
-		trigger: 'hover focus',
-		delay: {
-			show: 120,
-			hide: 70
-		},
-		boundary: 'window',
-		customClass: 'bsh-tooltip'
-	  });
+	  return new bootstrap.Tooltip(tooltipTriggerEl);
 	})
 }, false);
